@@ -3,19 +3,23 @@
     <button type="submit">Add Burger!</button>
 </form>
 
-<ol>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>{{this.name}}</li>
-    {{/if}}
-    {{/each}}
-</ol>
+<div class="container">
+    <ol>
+        <h2>Burgers Devoured</h2>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>{{this.name}}</li>
+        {{/if}}
+        {{/each}}
+    </ol>
 
-<ol>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li>{{this.name}}</li>
-    <button class="btn devour-btn">Devour!</button>
-    {{/unless}}
-    {{/each}}
-</ol>
+    <ol>
+        <h2>Burgers Waiting</h2>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>{{this.name}}</li>
+        <button class="btn devour-btn">Devour!</button>
+        {{/unless}}
+        {{/each}}
+    </ol>
+</div>
