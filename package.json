@@ -1,0 +1,21 @@
+{
+  "name": "13-Eat-Da-Burger",
+  "version": "1.0.0",
+  "description": "This is the homework assignment for Unit 13 of the UW Coding Bootcamp.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaaniBravo/13-Eat-Da-Burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaaniBravo/13-Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/TaaniBravo/13-Eat-Da-Burger#readme"
+}
