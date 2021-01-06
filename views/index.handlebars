@@ -1,0 +1,21 @@
+<form action="/" method="POST">
+    <textarea name="burger-name" id="burger-name"></textarea>
+    <button type="submit">Add Burger!</button>
+</form>
+
+<ol>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li>{{this.name}}</li>
+    {{/if}}
+    {{/each}}
+</ol>
+
+<ol>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>{{this.name}}</li>
+    <button class="btn devour-btn">Devour!</button>
+    {{/unless}}
+    {{/each}}
+</ol>

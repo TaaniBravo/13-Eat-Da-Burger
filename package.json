@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/TaaniBravo/13-Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/TaaniBravo/13-Eat-Da-Burger#readme"
+  "homepage": "https://github.com/TaaniBravo/13-Eat-Da-Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
