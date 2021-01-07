@@ -1,3 +1,12 @@
+$primary-color: #eebf77;
+$secondary-color: #e53b3b;
+$accent-color: #9f1313;
+
 body {
-    background: blue;
+    background: $primary-color;
+}
+
+img {
+    width: 50%;
+    height: auto;
 }
