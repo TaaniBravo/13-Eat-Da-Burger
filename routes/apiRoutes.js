@@ -1,5 +1,5 @@
 const path = require("path");
-const db = require("../db/orm.js");
+const orm = require("../config/orm.js");
 
 module.exports = app => {
 
