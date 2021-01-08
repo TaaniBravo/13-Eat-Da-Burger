@@ -4,8 +4,8 @@
 </form>
 
 <div class="container">
+    <h2>Burgers Devoured</h2>
     <ol>
-        <h2>Burgers Devoured</h2>
         {{#each burgers}}
         {{#if devoured}}
         <li>{{this.name}}</li>
@@ -13,12 +13,11 @@
         {{/each}}
     </ol>
 
+    <h2>Burgers Waiting</h2>
     <ol>
-        <h2>Burgers Waiting</h2>
         {{#each burgers}}
         {{#unless devoured}}
-        <li>{{this.name}}</li>
-        <button class="btn devour-btn">Devour!</button>
+        {{> burgers/burger-block devoured=false}}
         {{/unless}}
         {{/each}}
     </ol>
