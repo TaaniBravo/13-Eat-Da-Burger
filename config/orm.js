@@ -37,7 +37,8 @@ const orm = {
     },
 
     create: (table, cols, vals, cb) => {
-        const queryStr = `INSERT INTO ${table} (${cols.toString()}) VALUES (${printQuestionMarks(vals.length)})`
+        const queryStr = `INSERT INTO ${table} (${cols.toString()}) VALUES (${printQuestionMarks(vals)})`
+        
         connection.query(queryStr, vals, (err, data) => {
             if (err) throw err;
             cb(data);
@@ -45,7 +46,7 @@ const orm = {
     },
 
     update: (table, objColVals, condition, cb) => {
-        const queryStr = `UPDATE ${table} SET ${objColVals} WHERE ${condition}`
+        const queryStr = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`
 
         connection.query(queryStr, (err, data) => {
             if (err) throw err;
