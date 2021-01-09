@@ -1,5 +1,10 @@
 # 13-Eat-Da-Burger
 
+![Gif Example](https://media.giphy.com/media/XdsLqKW3D4G4CVlvd5/giphy.gif)
+
+[Heroku Link](https://eat-da-burger-or-else.herokuapp.com/) | 
+[Youtube Link](http://www.youtube.com/watch?v=fM2jVGmwH20)
+
 This is the homework assignment for Unit 13 of the UW Coding Bootcamp. In this assignment, I've created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). 
 
 I used Sass CSS as well although I definitely did not use it to its full potential as I just wanted to get comfortable with so I can use it more dynamically in future projects.
