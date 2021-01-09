@@ -5,7 +5,7 @@ const path = require('path')
 const app = express();
 const PORT = process.env.PORT || 3030;
 
-const routes = require('./controllers/burgersController')
+const router = require('./controllers/burgersController')
 
 app.use(express.static('public'));
 
@@ -15,8 +15,8 @@ app.use(express.json());
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.use(routes)
+app.use(router)
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(PORT, () => {
     console.log("App listening on http://LocalHost:" + PORT);
 })
