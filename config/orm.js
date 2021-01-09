@@ -31,7 +31,9 @@ const orm = {
     all: (table, cb) => {
         const queryStr = `SELECT * FROM ${table};`
         connection.query(queryStr, (err, data ) => {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
             cb(data);
         })
     },
@@ -40,7 +42,9 @@ const orm = {
         const queryStr = `INSERT INTO ${table} (${cols.toString()}) VALUES (${printQuestionMarks(vals)})`
         
         connection.query(queryStr, vals, (err, data) => {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
             cb(data);
         })
     },
@@ -49,7 +53,9 @@ const orm = {
         const queryStr = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`
 
         connection.query(queryStr, (err, data) => {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
             cb(data);
         })
     }
