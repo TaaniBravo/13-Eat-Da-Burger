@@ -15,10 +15,8 @@ app.use(express.json());
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-// require('./routes/apiRoutes')(app)
-// require('./routes/htmlRoutes')(app)
 app.use(routes)
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("App listening on http://LocalHost:" + PORT);
 })
