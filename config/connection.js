@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(err => {
-    if (err) throw err;
+    if (err) {throw err};
     console.log ("connect as id " + connection.threadId);
 });
 
