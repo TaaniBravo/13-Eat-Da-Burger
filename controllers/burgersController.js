@@ -38,4 +38,14 @@ router.put('/api/burgers/:id', (req, res) => {
     )
 })
 
+router.get('*', (req, res) => {
+    burger.all(data => {
+        const hbsObject = {
+            burgers: data
+        };
+        console.log(hbsObject);
+        res.render('index', hbsObject)
+    })
+});
+
 module.exports = router;
